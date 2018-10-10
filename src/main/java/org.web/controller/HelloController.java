@@ -17,7 +17,7 @@ public class HelloController {
     }
 
 
-    @GetMapping("/hello")
+    @GetMapping("/yolo")
     public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
         final String greeting = messageSource.getMessage("view.greeting", null, getLocale());
 
