@@ -18,7 +18,7 @@ public class HelloController {
 
 
     @GetMapping("/yolo")
-    public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
+    public String greeting(@RequestParam(value = "name", required = false, defaultValue = "Chicken") String name, Model model) {
         final String greeting = messageSource.getMessage("view.greeting", null, getLocale());
 
         final String businessMessage = messageSource.getMessage("business.test-message", null, getLocale());
