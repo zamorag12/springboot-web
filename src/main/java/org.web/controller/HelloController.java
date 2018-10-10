@@ -30,7 +30,7 @@ public class HelloController {
         model.addAttribute("validationMessage", validationMessage);
         model.addAttribute("name", name);
 
-        return "hello";
+        return name.equals("patito") ? "index" : "hello";
     }
 
 }
